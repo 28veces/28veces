@@ -7,7 +7,11 @@ module.exports = {
       './app.vue',
     ],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          pastelOrange: '#e67e22', // puedes ajustar este hex si quieres un tono diferente
+        },
+      },
     },
     plugins: [],
   }
