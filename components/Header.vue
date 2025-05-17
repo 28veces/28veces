@@ -25,9 +25,10 @@
   
           <!-- Nav (desktop) -->
           <nav class="hidden md:flex space-x-6 text-white-900 text-lg">
-            <a href="#" class="hover:underline">About</a>
-            <a href="#" class="hover:underline">Blog</a>
-            <a href="#" class="hover:underline">Contact</a>
+            <NuxtLink to="/" class="hover:underline">Inicio</NuxtLink>
+            <NuxtLink to="/sobre-mi" class="hover:underline">¿Qué es 28veces?</NuxtLink>
+            <NuxtLink to="/blog" class="hover:underline">Blog</NuxtLink>
+            <a href="#contact" class="hover:underline">Contacto</a>
           </nav>
         </div>
   
@@ -37,9 +38,10 @@
             v-show="isMenuOpen"
             class="overflow-hidden transition-all duration-300 max-h-40 flex flex-col space-y-2 mt-4 md:hidden text-white-900"
           >
-            <a href="#" class="hover:underline" @click="closeMenu">About</a>
-            <a href="#" class="hover:underline" @click="closeMenu">Blog</a>
-            <a href="#" class="hover:underline" @click="closeMenu">Contact</a>
+            <NuxtLink to="/" class="hover:underline" @click="closeMenu">Inicio</NuxtLink>
+            <NuxtLink to="/sobre-mi" class="hover:underline" @click="closeMenu">¿Qué es 28veces?</NuxtLink>
+            <NuxtLink to="/blog" class="hover:underline" @click="closeMenu">Blog</NuxtLink>
+            <a href="#contact" class="hover:underline" @click="closeMenu">Contacto</a>
           </div>
         </transition>
       </header>
@@ -78,4 +80,3 @@
     max-height: 160px;
   }
   </style>
-  
